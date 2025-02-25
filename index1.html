@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>  
+    <meta charset="UTF-8">  
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <link rel="stylesheet" href="css/style.css">  
+    <title>Be My Valentine?</title>  
+    <style>
+        body {
+            background-color: #ffb6c1; /* pink yang ucul */
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        .yes-btn, .no-btn {
+            padding: 10px 20px;
+            font-size: 16px;
+            border: none;
+            cursor: pointer;
+            border-radius: 10px;
+        }
+        .yes-btn {
+            background-color: #ff69b4; /* pink cerah */
+            color: white;
+        }
+        .no-btn {
+            background-color: #ff1493; /* pink lebih gelap */
+            color: white;
+        }
+    </style>
+</head>  
+<body>  
+    <div class="container">  
+        <img src="https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExNXEydTVsbmhhaGs2dzZhem1zdWtrdzU4YnBmeGlneGJ6Zm1uZTdyZCZlcD12MV9pbnRlcm5naWZfYnlfaWQmY3Q9cw/uYf1efc3YJdV0vsvZN/giphy.gif" alt="Valentine Gif">
+        <h1>apakah kezia siap menjalani hari kamis?</h1>  
+        <button class="yes-btn" onclick="redirect()">siap bos</button>  
+        <button class="no-btn" id="noBtn">No</button>  
+    </div>  
+
+    <script src="js/script.js"></script>  
+
+    <script>  
+        function redirect() {  
+            setTimeout(function() {
+                window.location.href = 'index.html';  // Redirect ke halaman lain
+            }, 500); 
+        }  
+    </script>
+
+</body>  
+</html>
